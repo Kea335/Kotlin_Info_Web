@@ -52,8 +52,10 @@ sandbox.window.KExercises.topics.forEach(function (t) {
     p.starter.split('\n').forEach(function (setir, n) {
       const { kod, serh } = ayir(setir);
 
-      // Şərhin içində bağlayıcı mötərizə varsa, o, kodu pozur
-      if (serh.indexOf('}') !== -1) {
+      // Şərhin içində bağlayıcı mötərizə varsa, o, kodu pozur.
+      // Amma sətir BÜTÜNLÜKLƏ şərhdirsə problem yoxdur — belə sətirlər
+      // adətən nümunə kod göstərir və heç nə udmur.
+      if (serh.indexOf('}') !== -1 && kod.trim() !== '') {
         problemler.push({
           yer: yer,
           setir: n + 1,

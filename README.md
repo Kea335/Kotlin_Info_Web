@@ -6,7 +6,7 @@
 
 <p align="center">
   <img alt="Bölmə sayı" src="https://img.shields.io/badge/b%C3%B6lm%C9%99-31-7F52FF">
-  <img alt="Kod nümunəsi" src="https://img.shields.io/badge/kod%20n%C3%BCmun%C9%99si-149-C711E1">
+  <img alt="Çalışma" src="https://img.shields.io/badge/%C3%A7al%C4%B1%C5%9Fma-1250-C711E1">
   <img alt="Qurulum" src="https://img.shields.io/badge/build%20add%C4%B1m%C4%B1-yoxdur-E44857">
   <img alt="Ölçü" src="https://img.shields.io/badge/%C3%B6l%C3%A7%C3%BC-390%20KB-informational">
   <img alt="Lisenziya" src="https://img.shields.io/badge/lisenziya-MIT-green">
@@ -74,6 +74,9 @@ Bu bölmə internet bağlantısı tələb edir; qalan bölmələr bağlantısız
 - 🌗 **İşıqlı / qaranlıq tema** — seçim brauzerdə yadda saxlanılır, sistem seçimi avtomatik tanınır
 - 🔍 **Axtarış** — <kbd>Ctrl</kbd>+<kbd>K</kbd> və ya <kbd>/</kbd>. Həm `dəyişən`, həm də diakritiksiz `deyisen` yazılışı ilə işləyir
 - 📊 **Oxuma tərəqqisi** — keçdiyin bölmələr yadda saxlanılır, yan paneldə faiz göstərilir
+- 🎓 **1250 çalışma** — 25 mövzu × (25 nəzəri + 25 praktiki), Junior/Middle/Senior səviyyələri.
+  Praktiki çalışmalarda yazdığın kod serverdə işlədilib nəticə avtomatik tutuşdurulur.
+  Hər model həll əvvəlcədən Kotlin kompilyatorunda yoxlanılıb.
 - 📋 **Kopyala / İşlə** — hər kod blokunda; **İşlə** gözlənilən nəticəni animasiya ilə göstərir
 - 🎨 **Öz sintaksis rəngləyicisi** — xarici kitabxana yoxdur, səhifə sürətli yüklənir
 - 📱 **Tam mobil uyğunluq** + çap (print) üçün ayrıca stil
