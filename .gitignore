@@ -1,0 +1,19 @@
+# Əməliyyat sistemi
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Redaktorlar və alətlər
+.vscode/
+.idea/
+.claude/
+*.swp
+*~
+
+# Loglar və müvəqqəti fayllar
+*.log
+tmp/
+.cache/
+
+# Docker
+.env
