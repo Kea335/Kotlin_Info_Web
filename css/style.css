@@ -485,6 +485,69 @@ td code, th code { font-family: var(--mono); font-size: .84em; color: var(--syn-
 .pg-host .code-area { border-radius: 0 !important; }
 .pg-host .console-output, .pg-host .output-wrapper { font-family: var(--mono) !important; }
 
+/* ---------- 14c. Çalışmalar ---------- */
+.ex-panel {
+  background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 22px; box-shadow: var(--shadow-md); margin: 24px 0;
+}
+.ex-toolbar {
+  display: flex; gap: 20px; align-items: flex-end; flex-wrap: wrap;
+  padding-bottom: 18px; margin-bottom: 16px; border-bottom: 1px solid var(--border);
+}
+.ex-field { display: flex; flex-direction: column; gap: 5px; min-width: 220px; flex: 1; }
+.ex-field > span { font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--text-faint); }
+.ex-select { font-family: var(--sans); font-size: .9rem; cursor: pointer; }
+.ex-progress { flex: 1; min-width: 220px; }
+
+.ex-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.ex-level {
+  font-size: .66rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 99px; color: #fff;
+}
+.ex-level.junior { background: linear-gradient(135deg, #17A05C, #0E7C46); }
+.ex-level.middle { background: linear-gradient(135deg, #B26A00, #8A5200); }
+.ex-level.senior { background: linear-gradient(135deg, #7F52FF, #C711E1); }
+.ex-tip {
+  font-size: .68rem; font-weight: 700; padding: 3px 10px; border-radius: 99px;
+  background: var(--bg-sunken); border: 1px solid var(--border); color: var(--text-dim);
+}
+.ex-hell-nisan { font-size: .72rem; font-weight: 700; color: var(--ok); margin-left: auto; }
+
+.ex-gozlenilen {
+  background: var(--bg-sunken); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm); padding: 11px 14px; margin-bottom: 14px;
+}
+.ex-gozlenilen > span { font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--text-faint); }
+.ex-gozlenilen pre {
+  margin: 6px 0 0; font-family: var(--mono); font-size: .85rem; color: var(--ok);
+  white-space: pre-wrap; word-break: break-word;
+}
+
+.ex-actions { display: flex; gap: 9px; flex-wrap: wrap; margin: 14px 0; align-items: center; }
+
+.ex-netice {
+  border-radius: var(--radius-sm); padding: 0 15px; margin-top: 12px;
+  max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s ease;
+  border: 1px solid transparent;
+}
+.ex-netice.show { max-height: 600px; padding: 14px 15px; overflow-y: auto; }
+.ex-netice.ok { background: color-mix(in srgb, var(--ok) 10%, transparent); border-color: var(--ok); }
+.ex-netice.bad { background: color-mix(in srgb, var(--err) 10%, transparent); border-color: var(--err); }
+.ex-netice.info { background: var(--accent-soft); border-color: var(--accent); }
+.ex-netice.loading { background: var(--bg-sunken); border-color: var(--border-strong); }
+.ex-netice-bas { font-weight: 750; font-size: .95rem; margin-bottom: 6px; }
+.ex-netice.ok .ex-netice-bas { color: var(--ok); }
+.ex-netice.bad .ex-netice-bas { color: var(--err); }
+.ex-netice-detal pre {
+  margin: 0; font-family: var(--mono); font-size: .82rem; white-space: pre-wrap;
+  word-break: break-word; color: var(--text-dim);
+}
+.ex-muqayise { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ex-muqayise b { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text-faint); }
+@media (max-width: 640px) { .ex-muqayise { grid-template-columns: 1fr; } }
+
+.ex-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
+
 /* ---------- 15. Quiz ---------- */
 .quiz-card {
   background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius);

@@ -400,5 +400,7 @@
     initUI();
   }
 
-  window.KPlayground = { activate: activate };
+  // ensureLib — Çalışmalar bölməsi də eyni kitabxananı işlədir,
+  // ikinci dəfə endirilməsin deyə yükləyici paylaşılır.
+  window.KPlayground = { activate: activate, ensureLib: loadLib, theme: themeName };
 })();

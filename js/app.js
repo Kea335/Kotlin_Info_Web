@@ -116,6 +116,8 @@
     if (window.KDemos) window.KDemos.activate(target.id);
     // Kod meydani yalniz oz bolmesi acilanda yuklenir (tenbel)
     if (window.KPlayground) window.KPlayground.activate(target.id);
+    // Calismalar bolmesi
+    if (window.KPractice) window.KPractice.activate(target.id);
   }
 
   function routeFromHash() {

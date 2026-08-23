@@ -17,3 +17,4 @@ tmp/
 
 # Docker
 .env
+tools/exercises.json

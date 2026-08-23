@@ -6092,6 +6092,73 @@ File("melumat.txt").useLines { setirler -&gt;
   </div>
 </section>
 
+<!-- ---------- ÇALIŞMALAR ---------- -->
+<section class="section" id="calismalar" data-title="Çalışmalar" data-group="Yekun">
+  <div class="wrap">
+    <p class="section-kicker">Çalışmalar</p>
+    <h2>Çalışmalar</h2>
+    <p class="lead">Hər mövzu üzrə iki növ çalışma: <b>nəzəri</b> — anlayışları yoxlayır, <b>praktiki</b> — kod yazdırır və nəticəni avtomatik tutuşdurur. Çalışmalar Junior, Middle və Senior səviyyələrinə bölünüb.</p>
+
+    <div class="callout info">
+      <span class="callout-ico">🎯</span>
+      <div class="callout-body">
+        <div class="callout-title">Praktiki çalışmalar necə yoxlanılır?</div>
+        <p>Kodu redaktorda yazıb <b>Yoxla</b> düyməsini basırsan. Kod JetBrains serverində kompilyasiya olunub işlədilir, çıxan nəticə gözlənilən nəticə ilə tutuşdurulur. Hər çalışmanın model həlli əvvəlcədən Kotlin kompilyatorunda yoxlanılıb — yəni tapşırıq mütləq həll olunandır.</p>
+      </div>
+    </div>
+
+    <div class="ex-panel">
+      <div class="ex-toolbar">
+        <label class="ex-field">
+          <span>Mövzu</span>
+          <select id="exMovzu" class="field ex-select"></select>
+        </label>
+        <div class="ex-progress">
+          <div class="sidebar-progress-label">
+            <span id="exHellSay">Həll edilib: 0 / 0</span>
+            <span id="exSayqac">Çalışma 1 / 1</span>
+          </div>
+          <div class="sidebar-progress-track"><div class="sidebar-progress-fill" id="exFill"></div></div>
+        </div>
+      </div>
+
+      <div class="tabs" style="margin:0 0 14px">
+        <div class="tab-bar" id="exRejim">
+          <button class="tab-btn active" data-rejim="nezeri">Nəzəri biliklər</button>
+          <button class="tab-btn" data-rejim="praktiki">Praktiki çalışmalar</button>
+        </div>
+      </div>
+
+      <div class="demo-row" id="exSeviyye">
+        <button class="chip active" data-level="hamisi">Hamısı</button>
+        <button class="chip" data-level="junior">Junior</button>
+        <button class="chip" data-level="middle">Middle</button>
+        <button class="chip" data-level="senior">Senior</button>
+      </div>
+
+      <div id="exBody"></div>
+
+      <div class="ex-nav">
+        <button class="btn btn-ghost btn-sm" id="exEvvelki">&larr; Əvvəlki</button>
+        <button class="btn btn-ghost btn-sm" id="exNovbeti">Növbəti &rarr;</button>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <span class="callout-ico">📈</span>
+      <div class="callout-body">
+        <div class="callout-title">Tərəqqin yadda saxlanılır</div>
+        <p>Düzgün həll etdiyin çalışmalar brauzerində qeyd olunur — səhifəni bağlayıb qayıtsan itmir. Səviyyə filtrini dəyişərək özünü sınaya bilərsən: Junior əsasları, Middle gündəlik iş hallarını, Senior isə incə detalları yoxlayır.</p>
+      </div>
+    </div>
+
+    <nav class="page-nav">
+      <button class="pn-btn prev"><div class="pn-dir">Əvvəlki</div><div class="pn-title"></div></button>
+      <button class="pn-btn next"><div class="pn-dir">Növbəti</div><div class="pn-title"></div></button>
+    </nav>
+  </div>
+</section>
+
 <!-- ---------- 28 · QUIZ ---------- -->
 <section class="section" id="quiz" data-title="Bilik testi" data-group="Yekun">
   <div class="wrap">
@@ -6290,5 +6357,7 @@ File("melumat.txt").useLines { setirler -&gt;
 <script src="js/app.js?v=20260823"></script>
 <script src="js/demos.js?v=20260823"></script>
 <script src="js/playground.js?v=20260823"></script>
+<script src="js/exercises.js?v=20260823"></script>
+<script src="js/practice.js?v=20260823"></script>
 </body>
 </html>
