@@ -5,17 +5,17 @@
 </p>
 
 <p align="center">
-  <img alt="Bölmə sayı" src="https://img.shields.io/badge/b%C3%B6lm%C9%99-31-7F52FF">
+  <img alt="Bölmə sayı" src="https://img.shields.io/badge/b%C3%B6lm%C9%99-32-7F52FF">
   <img alt="Çalışma" src="https://img.shields.io/badge/%C3%A7al%C4%B1%C5%9Fma-1250-C711E1">
   <img alt="Qurulum" src="https://img.shields.io/badge/build%20add%C4%B1m%C4%B1-yoxdur-E44857">
-  <img alt="Ölçü" src="https://img.shields.io/badge/%C3%B6l%C3%A7%C3%BC-390%20KB-informational">
+  <img alt="Ölçü" src="https://img.shields.io/badge/%C3%B6l%C3%A7%C3%BC-954%20KB-informational">
   <img alt="Lisenziya" src="https://img.shields.io/badge/lisenziya-MIT-green">
 </p>
 
 ---
 
 Sıfırdan qabaqcıl səviyyəyə qədər Kotlin dilini öyrədən **tam statik** sayt.
-**31 bölmə**, **149 işlək kod nümunəsi**, **canlı kod meydanı**, **6 interaktiv demo** və **15 suallıq bilik testi**.
+**32 bölmə**, **149 işlək kod nümunəsi**, **canlı kod meydanı**, **6 interaktiv demo**, **1250 çalışma** və **15 suallıq bilik testi**.
 
 Backend, verilənlər bazası, `npm install` və build addımı **yoxdur** — faylları serverə kopyalamaq kifayətdir.
 
@@ -46,7 +46,7 @@ Backend, verilənlər bazası, `npm install` və build addımı **yoxdur** — f
 | **Obyekt yönümlü** | Siniflər · Miras və interfeyslər · data/sealed/enum/object · Generiklər |
 | **Qabaqcıl** | Coroutine-lər · İstisnalar · Delegatlar və annotasiyalar |
 | **Tətbiq sahələri** | Android · Kotlin Multiplatform · Backend (Ktor/Spring) · Test yazmaq |
-| **Yekun** | Kotlin vs Java · İdiomlar · Bilik testi · Resurslar |
+| **Yekun** | Kotlin vs Java · İdiomlar · **Çalışmalar** · Bilik testi · Resurslar |
 
 ### Kod meydanı
 
@@ -115,14 +115,17 @@ php -S localhost:5173
 
 ```
 Kotlin_Info_Web/
-├── index.html              # bütün məzmun — 31 bölmə, 149 kod nümunəsi
+├── index.html              # bütün məzmun — 32 bölmə, 149 kod nümunəsi
 ├── css/
 │   └── style.css           # dizayn tokenləri, temalar, responsiv qaydalar
 ├── js/
 │   ├── highlight.js        # Kotlin sintaksis rəngləyicisi (öz yazımız)
 │   ├── app.js              # naviqasiya, tema, axtarış, tərəqqi izləmə
 │   ├── demos.js            # interaktiv demolar və bilik testi
-│   └── playground.js       # kod meydanı (Kotlin Playground inteqrasiyası)
+│   ├── playground.js       # kod meydanı (Kotlin Playground inteqrasiyası)
+│   ├── exercises.js        # çalışmalar bankı — 25 mövzu, 1250 çalışma
+│   └── practice.js         # çalışmalar mühərriki və avtomatik yoxlama
+├── tools/                  # çalışmaların doğrulama boru xətti (Node.js)
 ├── deploy/                 # server konfiqurasiya nümunələri
 │   ├── nginx.conf          # Nginx (Linux)
 │   ├── apache.htaccess     # Apache / cPanel
@@ -139,7 +142,7 @@ Kotlin_Info_Web/
 
 Build addımı yoxdur. Naviqasiya hash (`#bolme`) üzərində işlədiyi üçün
 serverdə **rewrite qaydası da lazım deyil**. Yalnız üç şeyi kopyala:
-`index.html`, `css/`, `js/`.
+`index.html`, `css/`, `js/`. (`tools/` yalnız inkişaf üçündür.)
 
 ### Nginx (Linux)
 
@@ -193,7 +196,7 @@ Sayt **http://localhost:8080** ünvanında açılır. Portu `docker-compose.yml`
 | Tələb | Dəyər |
 |---|---|
 | PHP / Node / verilənlər bazası | **Lazım deyil** |
-| Disk sahəsi | ~390 KB |
+| Disk sahəsi | ~954 KB |
 | MIME tipləri | `.html`, `.css`, `.js` (əksər serverlərdə hazırdır) |
 | Kodlaşdırma | **UTF-8** |
 
