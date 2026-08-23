@@ -65,7 +65,7 @@ Backend, verilənlər bazası, `npm install` və build addımı **yoxdur** — f
 - 🔍 **Axtarış** — <kbd>Ctrl</kbd>+<kbd>K</kbd> və ya <kbd>/</kbd>. Həm `dəyişən`, həm də diakritiksiz `deyisen` yazılışı ilə işləyir
 - 📊 **Oxuma tərəqqisi** — keçdiyin bölmələr yadda saxlanılır, yan paneldə faiz göstərilir
 - 📋 **Kopyala / İşlə** — hər kod blokunda; **İşlə** gözlənilən nəticəni animasiya ilə göstərir
-- 🎨 **Öz sintaksis rəngləyicisi** — xarici kitabxana yoxdur, tam oflayn işləyir
+- 🎨 **Öz sintaksis rəngləyicisi** — xarici kitabxana yoxdur, səhifə sürətli yüklənir
 - 📱 **Tam mobil uyğunluq** + çap (print) üçün ayrıca stil
 
 ---
