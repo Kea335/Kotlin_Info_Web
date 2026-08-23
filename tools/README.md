@@ -7,8 +7,13 @@ nəticə `gozlenilen` sahəsi ilə tutuşdurulur.
 ## İşlətmək
 
 ```bash
-node tools/extract-exercises.js && node tools/verify-exercises.js
+node tools/check-starters.js && node tools/extract-exercises.js && node tools/verify-exercises.js
 ```
+
+`check-starters.js` başlanğıc (starter) kodlarını yoxlayır — ən çox rast gəlinən səhv
+`{ // izah }` formasında şərhin bağlayıcı mötərizəni udmasıdır. Belə halda istifadəçi
+boşluğu doldursa da kod sintaktik olaraq pozuq qalır. Alət mətn literallarını nəzərə alır,
+ona görə `"https://..."` içindəki iki xətti şərh saymır.
 
 Birinci addım `js/exercises.js` faylını oxuyub struktur yoxlaması aparır
 (4 variant, düzgün cavab indeksi, izah, səviyyə və s.) və `tools/exercises.json`
