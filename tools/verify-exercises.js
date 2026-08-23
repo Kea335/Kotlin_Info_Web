@@ -18,8 +18,15 @@ const { spawnSync } = require('child_process');
 /* ---------- Alət yolları ---------- */
 const AS = 'C:\\Program Files\\Android\\Android Studio';
 const KOTLINC = path.join(AS, 'plugins', 'Kotlin', 'kotlinc', 'bin', 'kotlinc.bat');
-const STDLIB = path.join(AS, 'plugins', 'Kotlin', 'kotlinc', 'lib', 'kotlin-stdlib.jar');
+const LIB = path.join(AS, 'plugins', 'Kotlin', 'kotlinc', 'lib');
+const STDLIB = path.join(LIB, 'kotlin-stdlib.jar');
 const JAVA = path.join(AS, 'jbr', 'bin', 'java.exe');
+
+// Əlavə kitabxanalar — mövcuddursa klaspata qoşulur.
+// coroutines: suspend/async çalışmaları üçün, kotlin-test: assert funksiyaları üçün.
+const ELAVE = ['kotlinx-coroutines-core-jvm.jar', 'kotlin-test.jar', 'kotlin-test-junit.jar']
+  .map(function (ad) { return path.join(LIB, ad); })
+  .filter(function (yol) { return fs.existsSync(yol); });
 
 for (const [ad, yol] of [['kotlinc', KOTLINC], ['kotlin-stdlib', STDLIB], ['java', JAVA]]) {
   if (!fs.existsSync(yol)) {
@@ -65,7 +72,9 @@ console.log(`Kompilyasiya olunur: ${isler.length} calisma...`);
 /* ---------- Kompilyasiya ---------- */
 // kotlinc .bat faylıdır — Windows-da shell tələb edir.
 // Yolda boşluq olduğu üçün bütün arqumentlər dırnağa alınır.
-const emr = `"${KOTLINC}" "${SRC}" -d "${OUT}" -nowarn`;
+const kompCp = ELAVE.join(path.delimiter);
+const emr = `"${KOTLINC}" "${SRC}" -d "${OUT}" -nowarn` +
+  (kompCp ? ` -cp "${kompCp}"` : '');
 const komp = spawnSync(emr, {
   encoding: 'utf8',
   shell: true,
@@ -99,7 +108,7 @@ function normallasdir(s) {
     .replace(/\n+$/, '');
 }
 
-const cp = `${OUT}${path.delimiter}${STDLIB}`;
+const cp = [OUT, STDLIB].concat(ELAVE).join(path.delimiter);
 const uygunsuz = [];
 let ugurlu = 0;
 
