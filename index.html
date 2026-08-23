@@ -78,7 +78,7 @@
     <div class="hero-inner">
       <div class="hero-badge"><span class="dot"></span> Kotlin 2.x · Azərbaycan dilində tam bələdçi</div>
       <h1>Kotlin dilini <span class="grad">sıfırdan</span> qabaqcıl səviyyəyə qədər öyrən</h1>
-      <p class="hero-sub">30 bölmə, 149 işlək kod nümunəsi, canlı interaktiv demolar və bilik testi — hamısı bir səhifədə, Azərbaycan dilində.</p>
+      <p class="hero-sub">31 bölmə, 149 işlək kod nümunəsi, canlı kod meydanı və bilik testi — hamısı bir səhifədə, Azərbaycan dilində.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#qurasdirma">Başla — ilk proqramı yaz</a>
         <a class="btn btn-ghost" href="#quiz">Biliyini yoxla</a>
@@ -522,10 +522,68 @@ tasks.test {
   </div>
 </section>
 
+<!-- ---------- 03 · KOD MEYDANI ---------- -->
+<section class="section" id="kod-meydani" data-title="Kod meydanı" data-group="Başlanğıc">
+  <div class="wrap">
+    <p class="section-kicker">Bölmə 03</p>
+    <h2>Kod meydanı</h2>
+    <p class="lead">Burada Kotlin kodu yazıb dərhal işlədə bilərsən. Kod <b>həqiqətən kompilyasiya olunur</b> — JetBrains-in rəsmi serverlərində, eynilə <code class="inline">play.kotlinlang.org</code> saytındakı kimi. Heç nə quraşdırmağa ehtiyac yoxdur.</p>
+
+    <div class="demo" style="padding:18px">
+      <div class="demo-head" style="margin-bottom:12px">
+        <span class="demo-tag">Canlı</span>
+        <span class="demo-title">Kotlin redaktoru</span>
+        <span class="pg-status" id="pgStatus" style="margin-left:auto">Hazırlanır…</span>
+      </div>
+
+      <p class="demo-desc" style="margin-bottom:10px">Nümunələrdən birini seç, kodu istədiyin kimi dəyiş və <b>yaşıl ▶ düyməsini</b> bas:</p>
+
+      <div class="demo-row" id="pgPresets"></div>
+      <div class="demo-row" style="margin-bottom:14px">
+        <button class="chip" id="pgClear">Boş redaktor</button>
+      </div>
+
+      <div id="pgHost" class="pg-host"></div>
+    </div>
+
+    <div class="callout tip">
+      <span class="callout-ico">💡</span>
+      <div class="callout-body">
+        <div class="callout-title">Necə işləyir?</div>
+        <p>Yazdığın kod JetBrains serverinə göndərilir, orada kompilyasiya olunub işlədilir və nəticə geri qayıdır. Bu, brauzerdə saxta simulyasiya deyil — real Kotlin kompilyatorudur. Ona görə bu bölmə <b>internet bağlantısı tələb edir</b>; saytın qalan hissəsi isə bağlantısız da işləyir.</p>
+      </div>
+    </div>
+
+    <h3>Nə sınaya bilərsən</h3>
+    <ul>
+      <li><b>Nümunəni dəyişdir</b> — rəqəmləri, mətnləri, şərtləri dəyiş və nəticənin necə dəyişdiyini gör.</li>
+      <li><b>Qəsdən səhv et</b> — nöqtəli vergül əlavə et, tipi səhv yaz, <code class="inline">val</code>-a yeni dəyər ver. Kompilyatorun xəta mesajlarını oxumaq öyrənmənin ən sürətli yoludur.</li>
+      <li><b>Null təhlükəsizliyini sına</b> — «Null təhlükəsizliyi» nümunəsində <code class="inline">?.</code> işarəsini sil və nə baş verdiyinə bax.</li>
+      <li><b>Öz məşğələni yaz</b> — «Boş redaktor» düyməsi ilə təmiz səhifədən başla.</li>
+    </ul>
+
+    <div class="callout warn">
+      <span class="callout-ico">⌨️</span>
+      <div class="callout-body">
+        <div class="callout-title">Faydalı qısayollar</div>
+        <p>Redaktor daxilində: <span class="kbd">Ctrl</span>+<span class="kbd">Space</span> avtomatik tamamlama, <span class="kbd">Ctrl</span>+<span class="kbd">/</span> sətri şərhə çevirir, <span class="kbd">Tab</span> girinti əlavə edir.</p>
+      </div>
+    </div>
+
+    <h3>Kompüterində işlətmək</h3>
+    <p>Kod meydanı öyrənmək və sürətli sınaqlar üçündür. Real layihə yazmağa başlayanda <a href="#qurasdirma">Quraşdırma</a> bölməsinə qayıt — IntelliJ IDEA və ya Android Studio ilə tam mühit qurmaq lazım gələcək.</p>
+
+    <nav class="page-nav">
+      <button class="pn-btn prev"><div class="pn-dir">Əvvəlki</div><div class="pn-title"></div></button>
+      <button class="pn-btn next"><div class="pn-dir">Növbəti</div><div class="pn-title"></div></button>
+    </nav>
+  </div>
+</section>
+
 <!-- ---------- 03 · ƏSAS SİNTAKSİS ---------- -->
 <section class="section" id="sintaksis" data-title="Əsas sintaksis" data-group="Dilin əsasları">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 03</p>
+    <p class="section-kicker">Bölmə 04</p>
     <h2>Əsas sintaksis</h2>
     <p class="lead">Kotlin sintaksisi Java-ya bənzəyir, amma daha az səs-küylüdür: nöqtəli vergül məcburi deyil, tip çox vaxt yazılmır, hər şey ifadə (expression) ola bilir.</p>
 
@@ -697,7 +755,7 @@ enum class Reng(val kod: String) {
 <!-- ---------- 04 · DƏYİŞƏNLƏR VƏ TİPLƏR ---------- -->
 <section class="section" id="deyisenler" data-title="Dəyişənlər və tiplər" data-group="Dilin əsasları">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 04</p>
+    <p class="section-kicker">Bölmə 05</p>
     <h2>Dəyişənlər və tiplər</h2>
     <p class="lead">Kotlin statik tipli dildir — hər dəyişənin tipi kompilyasiya vaxtı məlumdur. Amma çox vaxt tipi yazmağa ehtiyac yoxdur: kompilyator onu özü müəyyən edir.</p>
 
@@ -916,7 +974,7 @@ fun main() {
 <!-- ---------- 05 · MƏTNLƏR ---------- -->
 <section class="section" id="metnler" data-title="Mətnlərlə iş (String)" data-group="Dilin əsasları">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 05</p>
+    <p class="section-kicker">Bölmə 06</p>
     <h2>Mətnlərlə iş (String)</h2>
     <p class="lead">Kotlin-də String dəyişməzdir (immutable). Amma şablon ifadələri, çox sətirli mətnlər və zəngin standart funksiyalar mətnlə işi çox rahat edir.</p>
 
@@ -1092,7 +1150,7 @@ true">
 <!-- ---------- 06 · OPERATORLAR ---------- -->
 <section class="section" id="operatorlar" data-title="Operatorlar" data-group="Dilin əsasları">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 06</p>
+    <p class="section-kicker">Bölmə 07</p>
     <h2>Operatorlar</h2>
     <p class="lead">Kotlin-də operatorlar əslində funksiya çağırışlarıdır. <code class="inline">a + b</code> ifadəsi arxa planda <code class="inline">a.plus(b)</code> deməkdir — bu, öz tiplərin üçün operator yükləməyə imkan verir.</p>
 
@@ -1261,7 +1319,7 @@ fun main() {
 <!-- ---------- 07 · ŞƏRTLƏR ---------- -->
 <section class="section" id="sertler" data-title="Şərtlər: if və when" data-group="Dilin əsasları">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 07</p>
+    <p class="section-kicker">Bölmə 08</p>
     <h2>Şərtlər: if və when</h2>
     <p class="lead">Kotlin-də şərt konstruksiyaları dəyər qaytaran ifadələrdir. Bu, kodu qısaldır və dəyişənləri dərhal ilkin dəyərlə təyin etməyə imkan verir.</p>
 
@@ -1437,7 +1495,7 @@ fun mesaj(s: Status) = when (s) {
 <!-- ---------- 08 · DÖVRLƏR ---------- -->
 <section class="section" id="dovrler" data-title="Dövrlər və aralıqlar" data-group="Dilin əsasları">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 08</p>
+    <p class="section-kicker">Bölmə 09</p>
     <h2>Dövrlər və aralıqlar</h2>
     <p class="lead">Kotlin-də klassik <code class="inline">for (i = 0; i &lt; n; i++)</code> forması yoxdur. Onun yerinə aralıqlar (ranges) və iterator əsaslı <code class="inline">for</code> istifadə olunur — daha qısa və səhvsizdir.</p>
 
@@ -1650,7 +1708,7 @@ Bitdi">
 <!-- ---------- 09 · FUNKSİYALAR ---------- -->
 <section class="section" id="funksiyalar" data-title="Funksiyalar" data-group="Funksiyalar">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 09</p>
+    <p class="section-kicker">Bölmə 10</p>
     <h2>Funksiyalar</h2>
     <p class="lead">Kotlin-də funksiyalar birinci dərəcəli vətəndaşdır: sinif daxilində olmaya bilər, dəyişəndə saxlanıla, parametr kimi ötürülə bilər.</p>
 
@@ -1886,7 +1944,7 @@ fun emailDuzgundur(email: String) =
 <!-- ---------- 10 · LAMBDA ---------- -->
 <section class="section" id="lambda" data-title="Lambda və HOF" data-group="Funksiyalar">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 10</p>
+    <p class="section-kicker">Bölmə 11</p>
     <h2>Lambda və yüksək sıralı funksiyalar</h2>
     <p class="lead">Yüksək sıralı funksiya (higher-order function) — parametr kimi funksiya qəbul edən və ya funksiya qaytaran funksiyadır. Lambda isə adı olmayan funksiyadır. Bu ikisi Kotlin-in ən güclü tərəfidir.</p>
 
@@ -2117,7 +2175,7 @@ fun main() {
 <!-- ---------- 11 · SCOPE FUNKSİYALARI ---------- -->
 <section class="section" id="scope-funksiyalari" data-title="Scope funksiyaları" data-group="Funksiyalar">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 11</p>
+    <p class="section-kicker">Bölmə 12</p>
     <h2>Scope funksiyaları</h2>
     <p class="lead">Beş funksiya — <code class="inline">let</code>, <code class="inline">run</code>, <code class="inline">with</code>, <code class="inline">apply</code>, <code class="inline">also</code>. Hamısı obyekt üzərində müvəqqəti sahə (scope) yaradır. Aralarındakı fərq yalnız iki şeydədir: <b>obyektə necə müraciət olunur</b> və <b>nə qaytarılır</b>.</p>
 
@@ -2260,7 +2318,7 @@ Düzgün deyil">
 <!-- ---------- 12 · GENİŞLƏNMƏLƏR ---------- -->
 <section class="section" id="genislenmeler" data-title="Genişlənmələr (extensions)" data-group="Funksiyalar">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 12</p>
+    <p class="section-kicker">Bölmə 13</p>
     <h2>Genişlənmələr (extensions)</h2>
     <p class="lead">Mövcud sinifə — hətta mənbə koduna çıxışın olmadığı <code class="inline">String</code> və ya <code class="inline">List</code> kimi siniflərə — yeni funksiya və xassə əlavə etmək olar. Miras almadan, sinifi dəyişmədən.</p>
 
@@ -2447,7 +2505,7 @@ fun &lt;T&gt; List&lt;T&gt;.tesadufi(): T? = if (isEmpty()) null else random()
 <!-- ---------- 13 · NULL SAFETY ---------- -->
 <section class="section" id="null-safety" data-title="Null təhlükəsizliyi" data-group="Təhlükəsizlik və data">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 13</p>
+    <p class="section-kicker">Bölmə 14</p>
     <h2>Null təhlükəsizliyi</h2>
     <p class="lead">Tony Hoare null referansı «milyard dollarlıq səhvim» adlandırmışdı. Kotlin bu problemi tip sisteminin özündə həll edir: <code class="inline">String</code> heç vaxt null ola bilməz, <code class="inline">String?</code> ola bilər. Kompilyator fərqi bilir və səni məcbur edir ki, nəzərə alasan.</p>
 
@@ -2748,7 +2806,7 @@ Kotlin">
 <!-- ---------- 14 · KOLLEKSİYALAR ---------- -->
 <section class="section" id="kolleksiyalar" data-title="Kolleksiyalar" data-group="Təhlükəsizlik və data">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 14</p>
+    <p class="section-kicker">Bölmə 15</p>
     <h2>Kolleksiyalar</h2>
     <p class="lead">Kotlin kolleksiyaları iki qrupa bölür: <b>dəyişməz</b> (read-only) və <b>dəyişkən</b> (mutable). Bu ayrım Java-da yoxdur və çoxlu səhvin qarşısını alır.</p>
 
@@ -3040,7 +3098,7 @@ fun main() {
 <!-- ---------- 15 · SİNİFLƏR ---------- -->
 <section class="section" id="oop" data-title="Siniflər və obyektlər" data-group="Obyekt yönümlü">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 15</p>
+    <p class="section-kicker">Bölmə 16</p>
     <h2>Siniflər və obyektlər</h2>
     <p class="lead">Kotlin-də sinif elan etmək bir sətir tutur. Konstruktor sinif başlığının bir hissəsidir, xassələr avtomatik getter/setter alır və boilerplate yox olur.</p>
 
@@ -3262,7 +3320,7 @@ fun main() {
 <!-- ---------- 16 · MİRAS ---------- -->
 <section class="section" id="miras" data-title="Miras və interfeyslər" data-group="Obyekt yönümlü">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 16</p>
+    <p class="section-kicker">Bölmə 17</p>
     <h2>Miras və interfeyslər</h2>
     <p class="lead">Kotlin-də bütün siniflər defolt olaraq <b>final</b>-dır — mirasa bağlıdır. Bu, «miras üçün dizayn et, ya da qadağan et» prinsipinin dilə hopdurulmasıdır.</p>
 
@@ -3472,7 +3530,7 @@ fun main() {
 <!-- ---------- 17 · XÜSUSİ SİNİFLƏR ---------- -->
 <section class="section" id="xususi-sinifler" data-title="data, sealed, enum, object" data-group="Obyekt yönümlü">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 17</p>
+    <p class="section-kicker">Bölmə 18</p>
     <h2>Xüsusi sinif növləri</h2>
     <p class="lead">Kotlin-in ən sevilən xüsusiyyətlərindən biri — konkret məqsədlər üçün hazır sinif növləri: məlumat saxlamaq, məhdud iyerarxiya qurmaq, sabit dəst yaratmaq və tək nüsxə (singleton) təmin etmək.</p>
 
@@ -3791,7 +3849,7 @@ fun main() {
 <!-- ---------- 18 · GENERİKLƏR ---------- -->
 <section class="section" id="generics" data-title="Generiklər" data-group="Obyekt yönümlü">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 18</p>
+    <p class="section-kicker">Bölmə 19</p>
     <h2>Generiklər</h2>
     <p class="lead">Generiklər eyni kodu müxtəlif tiplərlə işlətməyə imkan verir — tip təhlükəsizliyini itirmədən. <code class="inline">List&lt;String&gt;</code> ilə <code class="inline">List&lt;Int&gt;</code> arasındakı fərq buradan gəlir.</p>
 
@@ -3979,7 +4037,7 @@ fun main() {
 <!-- ---------- 19 · COROUTINE ---------- -->
 <section class="section" id="coroutines" data-title="Coroutine-lər" data-group="Qabaqcıl mövzular">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 19</p>
+    <p class="section-kicker">Bölmə 20</p>
     <h2>Coroutine-lər</h2>
     <p class="lead">Coroutine — dayandırıla və davam etdirilə bilən yüngül «tapşırıq»dır. Thread-dən fərqli olaraq əməliyyat sistemi resursu tutmur: bir neçə thread üzərində yüz minlərlə coroutine işləyə bilər.</p>
 
@@ -4369,7 +4427,7 @@ class SayqacViewModel {
 <!-- ---------- 20 · İSTİSNALAR ---------- -->
 <section class="section" id="istisnalar" data-title="İstisnalar (exceptions)" data-group="Qabaqcıl mövzular">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 20</p>
+    <p class="section-kicker">Bölmə 21</p>
     <h2>İstisnalar (exceptions)</h2>
     <p class="lead">Kotlin-də <b>checked exception</b> yoxdur — heç bir metod <code class="inline">throws</code> elan etməyə məcbur deyil. Bu, Java-nın ən çox tənqid olunan xüsusiyyətindən imtinadır.</p>
 
@@ -4578,7 +4636,7 @@ fun faylOxu(yol: String): String {
 <!-- ---------- 21 · DELEGATLAR ---------- -->
 <section class="section" id="delegatlar" data-title="Delegatlar və annotasiyalar" data-group="Qabaqcıl mövzular">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 21</p>
+    <p class="section-kicker">Bölmə 22</p>
     <h2>Delegatlar və annotasiyalar</h2>
     <p class="lead">Xassə delegasiyası — <code class="inline">get</code>/<code class="inline">set</code> məntiqini başqa obyektə həvalə etməkdir. Kotlin-in ən zərif xüsusiyyətlərindən biridir.</p>
 
@@ -4829,7 +4887,7 @@ fun main() {
 <!-- ---------- 22 · ANDROID ---------- -->
 <section class="section" id="android" data-title="Android tətbiqləri" data-group="Tətbiq sahələri">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 22</p>
+    <p class="section-kicker">Bölmə 23</p>
     <h2>Kotlin ilə Android</h2>
     <p class="lead">Android bu gün Kotlin-in ən böyük istifadə sahəsidir. Google 2019-dan «Kotlin-first» siyasəti yürüdür: yeni API-lər əvvəlcə Kotlin üçün hazırlanır.</p>
 
@@ -5045,7 +5103,7 @@ fun Fragment.gizliKlaviatura() {
 <!-- ---------- 23 · MULTIPLATFORM ---------- -->
 <section class="section" id="multiplatform" data-title="Kotlin Multiplatform" data-group="Tətbiq sahələri">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 23</p>
+    <p class="section-kicker">Bölmə 24</p>
     <h2>Kotlin Multiplatform (KMP)</h2>
     <p class="lead">KMP-nin ideyası sadədir: <b>biznes məntiqini bir dəfə yaz</b>, interfeysi hər platformada nativ saxla. React Native və Flutter-dən fərqi — UI-ı əvəz etmir, hər platformada nativ görünüş qalır.</p>
 
@@ -5248,7 +5306,7 @@ fun App() {
 <!-- ---------- 24 · BACKEND ---------- -->
 <section class="section" id="backend" data-title="Backend: Ktor və Spring" data-group="Tətbiq sahələri">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 24</p>
+    <p class="section-kicker">Bölmə 25</p>
     <h2>Backend: Ktor və Spring Boot</h2>
     <p class="lead">Kotlin serverdə də güclüdür. İki əsas seçim var: yüngül və tam Kotlin olan <b>Ktor</b>, yaxud yetkin ekosistemə malik <b>Spring Boot</b>.</p>
 
@@ -5451,7 +5509,7 @@ fun main() {
 <!-- ---------- 25 · TEST ---------- -->
 <section class="section" id="test" data-title="Test yazmaq" data-group="Tətbiq sahələri">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 25</p>
+    <p class="section-kicker">Bölmə 26</p>
     <h2>Test yazmaq</h2>
     <p class="lead">Kotlin-də test yazmaq xüsusilə rahatdır: backtick sayəsində test adları normal cümlə kimi oxunur, coroutine testləri isə xüsusi kitabxana ilə dəstəklənir.</p>
 
@@ -5658,7 +5716,7 @@ tasks.test {
 <!-- ---------- 26 · JAVA MÜQAYİSƏ ---------- -->
 <section class="section" id="java-muqayise" data-title="Kotlin və Java" data-group="Yekun">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 26</p>
+    <p class="section-kicker">Bölmə 27</p>
     <h2>Kotlin və Java müqayisəsi</h2>
     <p class="lead">Kotlin Java-nı əvəz etmək üçün yox, onun problemlərini həll etmək üçün yaradılıb. Hər iki dil eyni bayt-koda kompilyasiya olunur və eyni layihədə birlikdə işləyə bilər.</p>
 
@@ -5840,7 +5898,7 @@ class Servis {
 <!-- ---------- 27 · İDİOMLAR ---------- -->
 <section class="section" id="idiomlar" data-title="İdiomlar və best practice" data-group="Yekun">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 27</p>
+    <p class="section-kicker">Bölmə 28</p>
     <h2>İdiomlar və best practice</h2>
     <p class="lead">Kotlin-i «Java kimi» yazmaq olar, amma dilin gücü idiomatik üslubdadır. Aşağıda ən çox işlənən nümunələr — solda çəkinməli, sağda tövsiyə olunan.</p>
 
@@ -6037,7 +6095,7 @@ File("melumat.txt").useLines { setirler -&gt;
 <!-- ---------- 28 · QUIZ ---------- -->
 <section class="section" id="quiz" data-title="Bilik testi" data-group="Yekun">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 28</p>
+    <p class="section-kicker">Bölmə 29</p>
     <h2>Biliyini yoxla</h2>
     <p class="lead">15 sual — sintaksisdən coroutine-lərə qədər. Hər cavabdan sonra izah göstərilir. Suallar hər dəfə qarışıq sırada gəlir.</p>
 
@@ -6068,7 +6126,7 @@ File("melumat.txt").useLines { setirler -&gt;
 <!-- ---------- 29 · RESURSLAR ---------- -->
 <section class="section" id="resurslar" data-title="Resurslar" data-group="Yekun">
   <div class="wrap">
-    <p class="section-kicker">Bölmə 29</p>
+    <p class="section-kicker">Bölmə 30</p>
     <h2>Resurslar və növbəti addımlar</h2>
     <p class="lead">Bu sayt təməli verir. Daha da irəli getmək üçün aşağıdakı mənbələr və layihə ideyaları.</p>
 
@@ -6231,5 +6289,6 @@ File("melumat.txt").useLines { setirler -&gt;
 <script src="js/highlight.js?v=20260823"></script>
 <script src="js/app.js?v=20260823"></script>
 <script src="js/demos.js?v=20260823"></script>
+<script src="js/playground.js?v=20260823"></script>
 </body>
 </html>

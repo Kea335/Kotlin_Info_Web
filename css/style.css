@@ -456,6 +456,35 @@ td code, th code { font-family: var(--mono); font-size: .84em; color: var(--syn-
 .chain-op { font-family: var(--mono); font-weight: 700; color: var(--accent); flex: none; min-width: 118px; }
 .chain-val { font-family: var(--mono); color: var(--text-dim); word-break: break-word; }
 
+/* ---------- 14b. Kod meydanı (Kotlin Playground) ---------- */
+.pg-status {
+  font-size: .74rem; font-weight: 700; padding: 3px 10px; border-radius: 99px;
+  background: var(--bg-sunken); border: 1px solid var(--border); color: var(--text-faint);
+  white-space: nowrap;
+}
+.pg-status.ok { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 45%, transparent); }
+.pg-status.bad { color: var(--err); border-color: color-mix(in srgb, var(--err) 45%, transparent); }
+.pg-status.loading { color: var(--accent); border-color: var(--accent); }
+
+.pg-host {
+  border: 1px solid var(--border-strong); border-radius: var(--radius-sm);
+  overflow: hidden; background: var(--bg-code); min-height: 220px;
+}
+.pg-loading {
+  display: grid; place-items: center; min-height: 220px;
+  color: var(--text-faint); font-size: .9rem;
+}
+.pg-fallback { padding: 22px; }
+.pg-fallback-title { font-weight: 750; margin: 0 0 6px; color: var(--err); }
+.pg-fallback p { font-size: .88rem; color: var(--text-dim); margin: 0 0 10px; }
+
+/* Playground-un öz stilini sayt dizaynına uyğunlaşdırırıq */
+.pg-host .executable-fragment-wrapper { margin: 0 !important; border: none !important; }
+.pg-host .executable-fragment { border: none !important; border-radius: 0 !important; }
+.pg-host .CodeMirror { font-family: var(--mono) !important; font-size: .87rem !important; }
+.pg-host .code-area { border-radius: 0 !important; }
+.pg-host .console-output, .pg-host .output-wrapper { font-family: var(--mono) !important; }
+
 /* ---------- 15. Quiz ---------- */
 .quiz-card {
   background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius);

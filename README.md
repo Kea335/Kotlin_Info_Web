@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <img alt="Bölmə sayı" src="https://img.shields.io/badge/b%C3%B6lm%C9%99-30-7F52FF">
+  <img alt="Bölmə sayı" src="https://img.shields.io/badge/b%C3%B6lm%C9%99-31-7F52FF">
   <img alt="Kod nümunəsi" src="https://img.shields.io/badge/kod%20n%C3%BCmun%C9%99si-149-C711E1">
-  <img alt="Asılılıq" src="https://img.shields.io/badge/as%C4%B1l%C4%B1l%C4%B1q-yoxdur-E44857">
+  <img alt="Qurulum" src="https://img.shields.io/badge/build%20add%C4%B1m%C4%B1-yoxdur-E44857">
   <img alt="Ölçü" src="https://img.shields.io/badge/%C3%B6l%C3%A7%C3%BC-390%20KB-informational">
   <img alt="Lisenziya" src="https://img.shields.io/badge/lisenziya-MIT-green">
 </p>
@@ -15,7 +15,7 @@
 ---
 
 Sıfırdan qabaqcıl səviyyəyə qədər Kotlin dilini öyrədən **tam statik** sayt.
-**30 bölmə**, **149 işlək kod nümunəsi**, **6 canlı interaktiv demo** və **15 suallıq bilik testi**.
+**31 bölmə**, **149 işlək kod nümunəsi**, **canlı kod meydanı**, **6 interaktiv demo** və **15 suallıq bilik testi**.
 
 Backend, verilənlər bazası, `npm install` və build addımı **yoxdur** — faylları serverə kopyalamaq kifayətdir.
 
@@ -39,7 +39,7 @@ Backend, verilənlər bazası, `npm install` və build addımı **yoxdur** — f
 
 | Qrup | Bölmələr |
 |---|---|
-| **Başlanğıc** | Kotlin nədir · Tarixçə və ekosistem · Quraşdırma və ilk proqram |
+| **Başlanğıc** | Kotlin nədir · Tarixçə və ekosistem · Quraşdırma və ilk proqram · **Kod meydanı** |
 | **Dilin əsasları** | Sintaksis · Dəyişənlər və tiplər · Mətnlər · Operatorlar · Şərtlər · Dövrlər |
 | **Funksiyalar** | Funksiyalar · Lambda və HOF · Scope funksiyaları · Genişlənmələr |
 | **Təhlükəsizlik və data** | Null təhlükəsizliyi · Kolleksiyalar |
@@ -47,6 +47,16 @@ Backend, verilənlər bazası, `npm install` və build addımı **yoxdur** — f
 | **Qabaqcıl** | Coroutine-lər · İstisnalar · Delegatlar və annotasiyalar |
 | **Tətbiq sahələri** | Android · Kotlin Multiplatform · Backend (Ktor/Spring) · Test yazmaq |
 | **Yekun** | Kotlin vs Java · İdiomlar · Bilik testi · Resurslar |
+
+### Kod meydanı
+
+Saytda **real işləyən Kotlin redaktoru** var. İstifadəçi kod yazır, ▶ düyməsini basır və kod
+JetBrains-in rəsmi serverlərində **həqiqətən kompilyasiya olunub işlədilir** — nəticə brauzerə qayıdır.
+Simulyasiya deyil. 10 hazır nümunə var (salamlama, kolleksiyalar, null-safety, `data class`,
+`sealed class`, coroutine və s.), hamısı Kotlin kompilyatorunda yoxlanılıb.
+
+Kitabxana yalnız həmin bölmə açılanda endirilir, ona görə saytın qalan hissəsinin sürətinə təsir etmir.
+Bu bölmə internet bağlantısı tələb edir; qalan bölmələr bağlantısız da işləyir.
 
 ### İnteraktiv demolar
 
@@ -102,13 +112,14 @@ php -S localhost:5173
 
 ```
 Kotlin_Info_Web/
-├── index.html              # bütün məzmun — 30 bölmə, 149 kod nümunəsi
+├── index.html              # bütün məzmun — 31 bölmə, 149 kod nümunəsi
 ├── css/
 │   └── style.css           # dizayn tokenləri, temalar, responsiv qaydalar
 ├── js/
 │   ├── highlight.js        # Kotlin sintaksis rəngləyicisi (öz yazımız)
 │   ├── app.js              # naviqasiya, tema, axtarış, tərəqqi izləmə
-│   └── demos.js            # interaktiv demolar və bilik testi
+│   ├── demos.js            # interaktiv demolar və bilik testi
+│   └── playground.js       # kod meydanı (Kotlin Playground inteqrasiyası)
 ├── deploy/                 # server konfiqurasiya nümunələri
 │   ├── nginx.conf          # Nginx (Linux)
 │   ├── apache.htaccess     # Apache / cPanel
